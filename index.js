@@ -30,3 +30,7 @@ const totalRevenue = (drivers) => {
     return accumulator + driver.revenue
   }, 0);
 };
+
+const averageRevenue = (drivers) => {
+  return totalRevenue(drivers) / drivers.length;
+};
