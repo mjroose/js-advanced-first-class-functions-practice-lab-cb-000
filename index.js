@@ -28,5 +28,5 @@ const driversByName = (drivers) => {
 const totalRevenue = (drivers) => {
   return drivers.reduce((accumulator, driver) => {
     accumulator + driver.revenue
-  });
+  }, 0);
 };
