@@ -20,5 +20,7 @@ const driversByRevenue = (drivers) => {
 };
 
 const driversByName = (drivers) => {
-  return [...drivers].sort();
+  return [...drivers].sort((a, b) => {
+    return a.name.localecompare(b.name);
+  });
 }
