@@ -9,6 +9,12 @@ const logDriversByHometown = (drivers, hometown) => {
   const matchingDrivers = drivers.filter((driver) => {
     return driver.hometown === hometown;
   });
-  
+
   logDriverNames(matchingDrivers);
+};
+
+const driversByRevenue = (drivers) => {
+  [...drivers].sort((a, b) => {
+    return a.revenue - b.revenue
+  });
 };
