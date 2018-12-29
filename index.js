@@ -18,3 +18,7 @@ const driversByRevenue = (drivers) => {
     return a.revenue - b.revenue
   });
 };
+
+const driversByName = (drivers) => {
+  return [...drivers].sort();
+}
